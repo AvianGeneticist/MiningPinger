@@ -359,58 +359,107 @@ ship "Kimek Sliver"
 	"final explode" "final explosion small"
 	description `Developed alongside the Branch, the Sliver is a Kimek Thorn that has been trimmed down to fit snugly onto the docking clamps of the Branch. As a sort of multipurpose courier, Slivers are traditionally sold with exactly 20 outfit space reserved for a captain's personal choice of expansions: Either a Bunk Room, or a Cargo Expansion, allowing each ship to be tailored to the individual needs of the fleet in the moment. Of course, in the event of a Quarg invasion, these refits could be swapped out for a single small weapon; a fact that becomes very dangerous when you remember the ships are typically bundled into flights of more than 2 dozen.`
 
-	
-ship "Smew"
-	sprite "ship/smew"
-	thumbnail "ship/smew"
+shipyard "korath plugins"
+	"Pai Lek 36"
+	"Tek Far 87 - Lek"
+
+ship "Pai Lek 36"
+	sprite "ship/pai lek 36"
+	thumbnail "ship/pai lek 36"
 	attributes
-		category "Fighter"
-		licenses
-			Remnant
-		"cost" 1641000
-		"shields" 1200
-		"hull" 2800
-		"cargo space" 90
-		"fuel capacity" 100
-		"ramscoop" 0.8
-		"required crew" 2
-		"bunks" 9
-		"mass" 60
-		"drag" 1.96
-		"heat dissipation" .65
-		"outfit space" 92
-		"weapon capacity" 10
-		"engine capacity" 42
-		"shield generation" 0.48
-		"shield energy" 0.32
-		"hull repair rate" 0.9
-		"hull energy" 0.58
-		"outfit scan power" 14
-		"outfit scan speed" 1
-		"tactical scan power" 28
-		"asteroid scan power" 50
+		category "Bomber"
+		"cost" 2120000
+		"shields" 5200
+		"hull" 8800
+		"automaton" 1
+		"mass" 220
+		"drag" 5.7
+		"heat dissipation" .9
+		"outfit space" 292
+		"weapon capacity" 76
+		"engine capacity" 64
+		"self destruct" .5
 		weapon
-			"blast radius" 24
-			"shield damage" 130
-			"hull damage" 175
-			"hit force" 315
+			"blast radius" 250
+			"shield damage" 3200
+			"hull damage" 1600
+			"hit force" 4800
 	outfits
-		"Millennium Cell"
-		"Crystal Capacitor"
-		"Quantum Key Stone"
-		"Thermoelectric Cooler"
+		"Korath Detainer"
 		
-		"Crucible-Class Steering"
-		"Crucible-Class Thruster"
+		"Plasma Core"
+		"Generator (Candle Class)"
+		"Systems Core (Medium)"
+		"Small Heat Shunt" 3
+		"Control Transceiver"
 		
-	gun 0 -47.5
-	engine 0 48.5
-	leak "remnant leak sparkle" 22 3
-	explode "tiny explosion" 35
-	explode "small explosion" 24
-	description "The Remnant have long favoured turns of action that avoid putting crew directly at risk; though their Terns are a rather effective result of this ideology, the remnant still had to face the fact that, eventually, one of their manned ships was going to end up too crippled to escape to safety. To that end, the Smew was developed: Though quite lightly armed, Smews are capable of carrying a considerable quantity of cargo and passengers for a ship of their size, and are durable enough to absorb some fire from enemies while doing so."
-	description "	Though originally designed as lifeboats, the surprisingly mobile freighter-fighter hybrid has seen a remarkable amount of usage in mining fleets, as a way to supplement the otherwise poor cargo capacity of the Ibis. Because their purpose can vary from fleet to fleet, Smews are traditionally sold with a fair amount of free space; enough for a small weapon, upgraded engines, or additional support systems."
-	description "	Fighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay."
+		"Thruster (Comet Class)"
+		"Steering (Lunar Class)"
+		"Steering (Asteroid Class)"
+	
+	engine -5 90
+	gun -1.5 -83.5
+	explode "tiny explosion" 60
+	explode "small explosion" 30
+	explode "medium explosion" 35
+	explode "large explosion" 20
+	explode "huge explosion" 6
+	"final explode" "final explosion medium"
+	description "The Pai Lek 36 appears to have been built around a single concept: Utilise a fast, easily-constructable platform to provide a large amount of long-ranged fire support as cheaply as possible. Armed with a single Korath Detainer, these ships can be deployed in great numbers to cripple even the fastest ship's engines, allowing other ships in a Sestor fleet to rip apart the pinned target with shorter-ranged weapons."
+	description "Despite being built for long-ranged combat, the Pai Lek 31 still sports a rather robust hull, suggesting that earlier models may have been intended to fight closer to the fray, where the ship might be in danger."
+
+	
+#ship "Smew"
+#	sprite "ship/smew"
+#	thumbnail "ship/smew"
+#	attributes
+#		category "Fighter"
+#		licenses
+#			Remnant
+#		"cost" 1641000
+#		"shields" 1200
+#		"hull" 2800
+#		"cargo space" 90
+#		"fuel capacity" 100
+#		"ramscoop" 0.8
+#		"required crew" 2
+#		"bunks" 9
+#		"mass" 60
+#		"drag" 1.96
+#		"heat dissipation" .65
+#		"outfit space" 92
+#		"weapon capacity" 10
+#		"engine capacity" 42
+#		"shield generation" 0.48
+#		"shield energy" 0.32
+#		"hull repair rate" 0.9
+#		"hull energy" 0.58
+#		"outfit scan power" 14
+#		"outfit scan speed" 1
+#		"tactical scan power" 28
+#		"asteroid scan power" 50
+#		weapon
+#			"blast radius" 24
+#			"shield damage" 130
+#			"hull damage" 175
+#			"hit force" 315
+#	outfits
+#		"Millennium Cell"
+#		"Crystal Capacitor"
+#		"Quantum Key Stone"
+#		"Thermoelectric Cooler"
+#		
+#		"Crucible-Class Steering"
+#		"Crucible-Class Thruster"
+#		
+#	gun 0 -47.5
+#	engine 0 48.5
+#	leak "remnant leak sparkle" 22 3
+#	explode "tiny explosion" 35
+#	explode "small explosion" 24
+#	description "The Remnant have long favoured turns of action that avoid putting crew directly at risk; though their Terns are a rather effective result of this ideology, the remnant still had to face the fact that, eventually, one of their manned ships was going to end up too crippled to escape to safety. To that end, the Smew was developed: Though quite lightly armed, Smews are capable of carrying a considerable quantity of cargo and passengers for a ship of their size, and are durable enough to absorb some fire from enemies while doing so."
+#	description "	Though originally designed as lifeboats, the surprisingly mobile freighter-fighter hybrid has seen a remarkable amount of usage in mining fleets, as a way to supplement the otherwise poor cargo capacity of the Ibis. Because their purpose can vary from fleet to fleet, Smews are traditionally sold with a fair amount of free space; enough for a small weapon, upgraded engines, or additional support systems."
+#	description "	Fighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay."
 
 	
 ship "Stork"
@@ -482,3 +531,179 @@ ship "Stork"
 	description "Though their main worlds are all very centralized, their scout and patrol vessels occasionally have an emergency need for supplies, crew, or new Petrels and Terns that most of their ships will not be able to sate in a timely manner. This has lead to the development of the Stork; it is a rather delicate vessel, with little in the way of capacity for weaponry, but it is considerably faster than all but the smallest of the Remnant's ships, while also bearing a cloak that allows it to sneak by any foes attempting to disrupt supply lines."
 	description "	Though too lightly armed to be an appreciable warship or miner by itself, some remnant captains creatively use the ship as a mining carrier in place of the more expensive Ibis. The cloaking capability allows it to hide in the event a dangerous foe comes into play, meaning that the Stork fares remarkably well in riskier regions of space."
 	description "	The cloaking technology is built into the Stork's hull; it cannot be removed or transferred to another ship."
+
+ship "Tek Far 87 - Lek"
+	sprite "ship/tek far 87 lek"
+	thumbnail "thumbnail/ttek far 87 - lek"
+	attributes
+		category "Heavy Warship"
+		"cost" 29670000
+		"shields" 34800
+		"hull" 42500
+		"automaton" 1
+		"crew equivalent" 70
+		"mass" 810
+		"drag" 11.0
+		"heat dissipation" .55
+		"fuel capacity" 400
+		"cargo space" 58
+		"outfit space" 849
+		"weapon capacity" 377
+		"engine capacity" 133
+		"self destruct" .75
+		"ramscoop" 4
+		weapon
+			"blast radius" 360
+			"shield damage" 4700
+			"hull damage" 2300
+			"hit force" 7100
+	outfits
+		"Korath Detainer" 3
+		"Banisher Grav-Turret"
+		"Grab-Strike Turret"
+		"Warder Anti-Missile" 2
+		
+		"Triple Plasma Core"
+		"Systems Core (Large)"
+		"Large Heat Shunt" 2
+		"Small Heat Shunt" 2
+		"Control Transceiver"
+		
+		"Thruster (Planetary Class)"
+		"Steering (Planetary Class)"
+		"Hyperdrive"
+	
+	engine -25 309.5
+		zoom 1.1
+	engine -8 306.5
+	engine 8.5 302.5
+	gun -9 -271 "Korath Detainer"
+	gun -9 -271
+	gun 6 -260.5 "Korath Detainer"
+	gun 6 -260.5
+	gun 19.5 -242.5 "Korath Detainer"
+	gun 19.5 -242.5
+	turret -28.5 -199.5
+	turret -29.5 -176 "Banisher Grav-Turret"
+	turret -31.5 -152.5 "Warder Anti-Missile"
+	turret -32.5 -130 "Grab-Strike Turret"
+	turret 76.5 -5 "Warder Anti-Missile"
+	bay "Bomber" 20.5 -175 under
+	bay "Bomber" 26.5 -121.5 over
+	bay "Bomber" 24 -17.5 under
+	bay "Bomber" 27.5 127.5 over
+	bay "Bomber" 28 246 under
+	explode "tiny explosion" 80
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "This large vessel seems to exist as a counterpart to the Kar Ik Vot 349, specializing in carrying nearly half a dozen Pai Lek 36 Bombers to where they need to go while also serving as a capable meatshield for its complement."
+
+
+#ship "Tek Far 71 - Lek" "Tek Far 71 - Lek (Bombers)"
+#	outfits
+#		"Korath Detainer"
+#		"Korath Piercer Launcher" 2
+#		"Korath Piercer" 62
+#		"Korath Banisher"
+#		"Korath Warder" 2
+#		
+#		"Double Plasma Core"
+#		"Generator (Furnace Class)"
+#		"Systems Core (Medium)"
+#		"Large Heat Shunt"
+#		"Control Transceiver"
+#		
+#		"Thruster (Lunar Class)"
+#		"Steering (Lunar Class)"
+#		"Hyperdrive"
+#	
+#	engine -9 219
+#	engine 9 219
+#	gun 10 -180 "Korath Detainer"
+#	gun 10 -180 "Korath Piercer Launcher"
+#	gun 10 -180 "Korath Piercer Launcher"
+#	turret -10 -85 "Korath Warder"
+#	turret -13 -61
+#	turret -14 -38 "Korath Banisher"
+#	turret 14 177 "Korath Warder"
+#	bay "Bomber" 23 -63.5 over
+#	bay "Bomber" 39.5 18.5 under
+#	bay "Bomber" 54.5 135.5 under
+
+ship "Turtle Dove"
+	sprite "ship/turtle dove"
+	thumbnail "thumbnail/albatross"
+	attributes
+		category "Heavy Warship"
+		licenses
+			"Remnant Capital"
+		cost 20250000
+		"shields" 54080
+		"hull" 36040
+		"required crew" 86
+		"bunks" 648
+		"cargo space" 1064
+		"mass" 2204
+		"drag" 28.6
+		"heat dissipation" 0.4
+		"fuel capacity" 900
+		"ramscoop" 5
+		"outfit space" 538
+		"weapon capacity" 0
+		"engine capacity" 226
+		"shield generation" 13.9
+		"shield energy" 11.8
+		"hull repair rate" 6.2
+		"hull energy" 5.3
+		"active cooling" 40
+		"cooling energy" 2.4
+		"outfit scan power" 72
+		"outfit scan speed" 1
+		"tactical scan power" 19
+		"dove wings" 7
+		"dove talons" -7
+		weapon
+			"blast radius" 640
+			"shield damage" 10800
+			"hull damage" 7200
+			"hit force" 12600
+	outfits
+		"Dove Defense Array" 4
+		"Dove Denial Projector" 3
+
+		"Aeon Cell"
+		"Epoch Cell"
+		"Crystal Capacitor" 2
+		"Quantum Key Stone"
+
+		"Smelter-Class Thruster"
+		"Forge-Class Thruster"
+		"Smelter-Class Steering" 2
+		"Scram Drive"
+
+	engine 0 215
+		zoom 0.8
+	engine -66.5 136.5
+		zoom 1.6
+	engine 66.5 136.5
+		zoom 1.6
+	turret 0 -131.5 "Dove Denial Projector"
+	turret 0 -97 "Dove Denial Projector"
+	turret -60.5 -11 "Dove Defense Array"
+	turret 60.5 -11 "Dove Defense Array"
+	turret -64 44.5 "Dove Defense Array"
+	turret 64 44.5 "Dove Defense Array"
+	turret 0 94 "Dove Denial Projector"
+	leak "remnant leak" 30 10
+	leak "remnant leak sparkle" 30 10
+	explode "small explosion" 30
+	explode "medium explosion" 60
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large" 1
+	description "The Remnant are not an ilk with the luxury of being able to peacefully negotiate with many species, but should they require a vessel for large-scale negotiation, this enormous beast of a ship is their chosen vessel. The Turtle Dove has the capacity to house a small colony's population of diplomats, as well as large enough cargo holds to suit the demands of any negotiation; all wrapped up in a hull more than twice the durability of an Albatross."
+	description "The Turtle Dove is not as advanced as some remnant ships in terms of intelligence, and its on-board scanners are somewhat inadequate for a ship of its size; however, the ship contains spiracle-like structures that allow it to cycle heat out via large gas ballasts located deep within its hull."
+	description "As a peace vessel, the Turtle Dove carries no offensive weaponry; only anti-missile turrets that allow it to cast a wide field of missile denial over any allies it may be escorting."
