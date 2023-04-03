@@ -358,56 +358,6 @@ ship "Kimek Sliver"
 	explode "small explosion" 4
 	"final explode" "final explosion small"
 	description `Developed alongside the Branch, the Sliver is a Kimek Thorn that has been trimmed down to fit snugly onto the docking clamps of the Branch. As a sort of multipurpose courier, Slivers are traditionally sold with exactly 20 outfit space reserved for a captain's personal choice of expansions: Either a Bunk Room, or a Cargo Expansion, allowing each ship to be tailored to the individual needs of the fleet in the moment. Of course, in the event of a Quarg invasion, these refits could be swapped out for a single small weapon; a fact that becomes very dangerous when you remember the ships are typically bundled into flights of more than 2 dozen.`
-
-shipyard "korath plugins"
-	"Pai Lek 36"
-	"Tek Far 87 - Lek"
-
-ship "Pai Lek 36"
-	sprite "ship/pai lek 36"
-	thumbnail "ship/pai lek 36"
-	attributes
-		category "Bomber"
-		"cost" 2120000
-		"shields" 5200
-		"hull" 8800
-		"automaton" 1
-		"mass" 220
-		"drag" 5.7
-		"heat dissipation" .9
-		"outfit space" 292
-		"weapon capacity" 76
-		"engine capacity" 64
-		"self destruct" .5
-		weapon
-			"blast radius" 250
-			"shield damage" 3200
-			"hull damage" 1600
-			"hit force" 4800
-	outfits
-		"Korath Detainer"
-		
-		"Plasma Core"
-		"Generator (Candle Class)"
-		"Systems Core (Medium)"
-		"Small Heat Shunt" 3
-		"Control Transceiver"
-		
-		"Thruster (Comet Class)"
-		"Steering (Lunar Class)"
-		"Steering (Asteroid Class)"
-	
-	engine -5 90
-	gun -1.5 -83.5
-	explode "tiny explosion" 60
-	explode "small explosion" 30
-	explode "medium explosion" 35
-	explode "large explosion" 20
-	explode "huge explosion" 6
-	"final explode" "final explosion medium"
-	description "The Pai Lek 36 appears to have been built around a single concept: Utilise a fast, easily-constructable platform to provide a large amount of long-ranged fire support as cheaply as possible. Armed with a single Korath Detainer, these ships can be deployed in great numbers to cripple even the fastest ship's engines, allowing other ships in a Sestor fleet to rip apart the pinned target with shorter-ranged weapons."
-	description "Despite being built for long-ranged combat, the Pai Lek 31 still sports a rather robust hull, suggesting that earlier models may have been intended to fight closer to the fray, where the ship might be in danger."
-
 	
 #ship "Smew"
 #	sprite "ship/smew"
@@ -531,76 +481,6 @@ ship "Stork"
 	description "Though their main worlds are all very centralized, their scout and patrol vessels occasionally have an emergency need for supplies, crew, or new Petrels and Terns that most of their ships will not be able to sate in a timely manner. This has lead to the development of the Stork; it is a rather delicate vessel, with little in the way of capacity for weaponry, but it is considerably faster than all but the smallest of the Remnant's ships, while also bearing a cloak that allows it to sneak by any foes attempting to disrupt supply lines."
 	description "	Though too lightly armed to be an appreciable warship or miner by itself, some remnant captains creatively use the ship as a mining carrier in place of the more expensive Ibis. The cloaking capability allows it to hide in the event a dangerous foe comes into play, meaning that the Stork fares remarkably well in riskier regions of space."
 	description "	The cloaking technology is built into the Stork's hull; it cannot be removed or transferred to another ship."
-
-ship "Tek Far 87 - Lek"
-	sprite "ship/tek far 87 lek"
-	thumbnail "thumbnail/ttek far 87 - lek"
-	attributes
-		category "Heavy Warship"
-		"cost" 29670000
-		"shields" 34800
-		"hull" 42500
-		"automaton" 1
-		"crew equivalent" 70
-		"mass" 810
-		"drag" 11.0
-		"heat dissipation" .55
-		"fuel capacity" 400
-		"cargo space" 58
-		"outfit space" 849
-		"weapon capacity" 377
-		"engine capacity" 133
-		"self destruct" .75
-		"ramscoop" 4
-		weapon
-			"blast radius" 360
-			"shield damage" 4700
-			"hull damage" 2300
-			"hit force" 7100
-	outfits
-		"Korath Detainer" 3
-		"Banisher Grav-Turret"
-		"Grab-Strike Turret"
-		"Warder Anti-Missile" 2
-		
-		"Triple Plasma Core"
-		"Systems Core (Large)"
-		"Large Heat Shunt" 2
-		"Small Heat Shunt" 2
-		"Control Transceiver"
-		
-		"Thruster (Planetary Class)"
-		"Steering (Planetary Class)"
-		"Hyperdrive"
-	
-	engine -25 309.5
-		zoom 1.1
-	engine -8 306.5
-	engine 8.5 302.5
-	gun -9 -271 "Korath Detainer"
-	gun -9 -271
-	gun 6 -260.5 "Korath Detainer"
-	gun 6 -260.5
-	gun 19.5 -242.5 "Korath Detainer"
-	gun 19.5 -242.5
-	turret -28.5 -199.5
-	turret -29.5 -176 "Banisher Grav-Turret"
-	turret -31.5 -152.5 "Warder Anti-Missile"
-	turret -32.5 -130 "Grab-Strike Turret"
-	turret 76.5 -5 "Warder Anti-Missile"
-	bay "Bomber" 20.5 -175 under
-	bay "Bomber" 26.5 -121.5 over
-	bay "Bomber" 24 -17.5 under
-	bay "Bomber" 27.5 127.5 over
-	bay "Bomber" 28 246 under
-	explode "tiny explosion" 80
-	explode "small explosion" 45
-	explode "medium explosion" 50
-	explode "large explosion" 40
-	explode "huge explosion" 10
-	"final explode" "final explosion large"
-	description "This large vessel seems to exist as a counterpart to the Kar Ik Vot 349, specializing in carrying nearly half a dozen Pai Lek 36 Bombers to where they need to go while also serving as a capable meatshield for its complement."
-
 
 #ship "Tek Far 71 - Lek" "Tek Far 71 - Lek (Bombers)"
 #	outfits
